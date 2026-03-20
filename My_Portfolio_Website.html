@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frontend Developer Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#0f172a;
+color:white;
+position:sticky;
+top:0;
+}
+
+nav h2{
+font-weight:600;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(120deg,#0f172a,#1e293b);
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+margin:15px 0;
+font-size:18px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#38bdf8;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:#0284c7;
+}
+
+/* Sections */
+
+section{
+padding:70px 10%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+}
+
+/* About */
+
+.about{
+text-align:center;
+max-width:700px;
+margin:auto;
+}
+
+/* Services */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.service-card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+/* Portfolio */
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+
+.contact form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+.contact input,
+.contact textarea{
+margin-bottom:15px;
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.contact button{
+padding:12px;
+border:none;
+background:#0f172a;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.contact button:hover{
+background:#1e293b;
+}
+
+/* Footer */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:35px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:10px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+<h2>Abdullah</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+<div>
+<h1>Frontend Web Developer</h1>
+<p>I build responsive and modern websites using HTML, CSS and JavaScript.</p>
+
+<button onclick="scrollToContact()">Hire Me</button>
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p class="about">
+Hello! I'm a passionate frontend developer who creates clean and professional websites.
+I focus on responsive design, user experience and modern web technologies.
+</p>
+
+</section>
+
+<!-- Services -->
+
+<section id="services">
+
+<h2>My Services</h2>
+
+<div class="services">
+
+<div class="service-card">
+<h3>Website Design</h3>
+<p>Modern and clean website design for businesses and individuals.</p>
+</div>
+
+<div class="service-card">
+<h3>Responsive Website</h3>
+<p>Mobile friendly websites that work on all devices.</p>
+</div>
+
+<div class="service-card">
+<h3>Landing Pages</h3>
+<p>High converting landing pages for marketing and startups.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Portfolio -->
+
+<section id="portfolio">
+
+<h2>My Projects</h2>
+
+<div class="portfolio">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Personal developer portfolio website.</p>
+</div>
+
+<div class="project">
+<h3>Business Landing Page</h3>
+<p>Modern landing page for a startup.</p>
+</div>
+
+<div class="project">
+<h3>Restaurant Website</h3>
+<p>Responsive restaurant website design.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>© 2026 Abdullah | Frontend Developer</p>
+
+</footer>
+
+<script>
+
+function scrollToContact(){
+
+document.getElementById("contact").scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
